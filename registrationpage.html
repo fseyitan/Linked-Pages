@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <style>
+      .header {
+        border: 1px solid purple;
+        background-color: black;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+      }
+      .navbar a:hover {
+        color: plum;
+      }
+      .registration {
+        color: plum;
+      }
+      form {
+        border: 1px solid plum;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+        padding: 25px 0px 25px 0px;
+      }
+      #submit {
+        border: 2px solid purple;
+        background-color: plum;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="about">ABOUT ME</a>
+        <a href="contactpage.html" class="contact">CONTACT</a>
+        <a href="registrationpage.html" class="registration"> REGISTRATION </a>
+        <a href="loginpage.html" class="login">LOGIN</a>
+      </nav>
+    </header>
+    <main>
+      <form action="mailto:fseyitan@gmail.com" method="post" class="form">
+        <label for="Fname">FIRST NAME:</label><br />
+        <input type="text" id="fname" name="fname" required /><br />
+        <label for="Lname">LAST NAME:</label><br />
+        <input type="text" id="lname" name="lname" required /><br />
+        <label for="Phone">PHONE:</label><br />
+        <input type="tel" id="phone" name="phone" required /><br />
+        <label for="Gender">GENDER:</label><br />
+        <input list="gender" name="gender" required />
+        <datalist id="gender">
+          <option value="Male"></option>
+          <option value="Female"></option>
+          <option value="Other"></option>
+        </datalist>
+        <br />
+        <label for="Country">COUNTRY:</label><br />
+        <input type="text" id="country" name="country" required /><br />
+        <label for="State">STATE/PROVINCE:</label><br />
+        <input type="text" id="state" name="state" required /><br />
+        <label for="Email">EMAIL:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+        <label for="Password">PASSWORD:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="6"
+        /><br />
+        <label for="Confirm">CONFIRM PASSWORD:</label><br />
+        <input
+          type="password"
+          id="Confirm"
+          name="confirm"
+          required
+          minlength="6"
+        /><br />
+        <input type="submit" value="SUBMIT" id="submit" />
+      </form>
+    </main>
+  </body>
+</html>

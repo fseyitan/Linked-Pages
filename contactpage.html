@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <style>
+      .header {
+        border: 1px solid purple;
+        background-color: black;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+      }
+     .navbar a:hover {
+        color: plum;
+      }
+      .contact {
+        color: plum;
+      }
+      form {
+        border: 1px solid plum;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+        padding: 25px 0px 25px 0px;
+      }
+      #submit {
+        border: 2px solid purple;
+        background-color: plum;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="about">ABOUT ME</a>
+        <a href="contactpage.html" class="contact">CONTACT</a>
+        <a href="registrationpage.html" class="registration"> REGISTRATION </a>
+        <a href="loginpage.html" class="login">LOGIN</a>
+      </nav>
+    </header>
+    <main>
+      <form action="mailto:fseyitan@gmail.com" method="post" class="form">
+        <label for="Name">NAME:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+        <label for="Email">EMAIL:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+        <label for="Name">MESSAGE:</label><br />
+        <input type="text" id="message" name="message" required /><br />
+        <input type="submit" value="SUBMIT" id="submit" />
+      </form>
+    </main>
+  </body>
+</html>
